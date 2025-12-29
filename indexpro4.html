@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Alpine Copy</title>
+</head>
+<body>
+    <img src="https://i.pinimg.com/1200x/9b/92/b1/9b92b1224a310f88055a498f09b0c28b.jpg" id="hero-image" class="hero-image" alt="Skiers" loading="lazy">
+    <header id="header" class="header">
+        <img src="https://i.pinimg.com/736x/7e/a0/6f/7ea06fe60f018b2b8b4721ae0ff1b90a.jpg" id="header-img" class="logo" alt="Alpine Copy Logo" loading="lazy">
+        <span id="title" class="title">Alpine Copy</span>
+        <i class="fa-solid fa-bars bars"></i>
+        <nav id="nav-bar" class="nav-bar"> 
+            <a href="#paragraph" class="nav-link">Skiers</a>
+            <a href="#video-section" class="nav-link">Learn</a>
+            <a href="#registration" class="nav-link">Community</a>
+            <a href="#form" class="nav-link">Be a coach</a>
+        </nav>
+    </header>
+
+
+    <section id="paragraph" class="paragraph">
+        <p id="heading" class="heading"><span class="heading1">Access Bright</span> Skiing Journey.</p>
+        <p id="description" class="description">01. Journey where the crisp mountain air meets the thrill of the descent. Alpine Adventure is your gateway
+            to the enchanting world of skiing, where every turn is a new discovery and every slope tells a story.</p>
+        <a href="#" id="get-to-know" class="get-to-know">Get to know</a>
+    </section>
+
+
+    <section id="video-section" class="video-section">
+        <p id="video-heading" class="video-heading">Experience the Thrill of Skiing</p>
+        <iframe id="video" class="video" src="https://www.youtube.com/embed/B5xckyNsWKw&list=RDB5xckyNsWKw&start_radio=1">
+            <a href="https://www.youtube.com/embed/B5xckyNsWKw&list=RDB5xckyNsWKw&start_radio=1" target="_blank">#document (https://www.youtube.com/embed/B5xckyNsWKw&list=RDB5xckyNsWKw&start_radio=1) </a>
+        </iframe>
+    </section>
+
+
+    <section id="registration" class="registration">
+        <form id="form" class="form" action="https://www.freecodecamp.com/email-submit">
+            <span id="form-heading" class="form-heading">Join our skiing community</span>
+            <div class="form-mainsection">
+                <label class="name-text form-text">Name <input type="text" id="name" class="name input" placeholder="Enter your name" required></label>
+                <label class="age-text form-text">Age <input type="number" id="age" class="age input" placeholder="Enter your age"></label>
+                <label class="email-text form-text">Email <input type="email" id="email" name="email" class="email input" placeholder="Enter your email" required></label>
+                <input type="submit" id="submit" class="submit" value="Submit" action="https://www.freecodecamp.com/email-submit" method="POST">
+            </div>
+        </form>
+    </section>
+</body>
+</html>
