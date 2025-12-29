@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body .hero-image{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 60px;
+    z-index: 999;
+}
+.header > .logo{
+    width: 60px;
+    height: 60px;
+    margin-left: 30px ;
+}
+.header > .title{
+    position: fixed;
+    margin: 16px 5px;
+    font-size: 30px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    color: white;
+}
+.header > .nav-bar {
+    width: 50%;
+    position: fixed;
+    left: 30%;
+    margin-left: 10%; 
+    top: 25px;
+}
+.header > .nav-bar > .nav-link{
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+}
+.bars{
+    display: none !important;
+}
+
+#paragraph{
+    position: absolute;
+    top: 15vh;
+    width: 40%;
+    min-width: 300px;
+    height: auto;
+    left: 70px;
+    color: rgb(255, 255, 255);
+    backdrop-filter: blur(2px); 
+    background-color: rgba(186, 189, 191, 0.25);
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.heading{
+    font-size: 40px;
+    font-family: work sans, sans-serif;
+    align-items: left;
+    margin: 10px 5px 0px 15px;
+}
+.heading1{
+    display: block;
+}
+.description{
+    font-family: 'Work Sans', sans-serif;
+    margin: 10px 10px 10px 15px;
+    font-size: 17px;
+    text-align: justify;
+}
+.get-to-know{
+    margin: 10px 10px 10px 15px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    font-family: Work Sans, sans-serif;
+}
+.get-to-know:hover{
+    color: rgb(175, 200, 245);
+    transition: 0.2s;
+}
+
+.video-section{
+    position: absolute;
+    top: 50vh;
+    left: 70px;
+    width: 420px;
+    height: auto;
+    padding: 10px 15px 20px 15px;
+    background-color: rgba(186, 189, 191, 0.25);
+    border-radius: 10px;
+}
+.video-heading{
+    font-size: 24px;
+    font-family: 'Work Sans', sans-serif;
+    margin: 10px 10px 10px 15px;
+    color: white;
+}
+.video{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    border: none;
+}
+.registration{
+    position: absolute;
+    top: 18vh;
+    left: 60vw;
+    width: 31vw;
+    height: 350px;
+    padding: 10px 15px 20px 15px;
+    background-color: rgba(186, 189, 191, 0.25);
+    border-radius: 10px;
+}
+.form-heading{
+    display: block;
+    font-size: 30px;
+    font-family: 'Work Sans', sans-serif;
+    margin: 10px 10px 10px 15px;
+    color: white;
+    text-align: center;
+}
+.form-mainsection{
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    padding: 15px;
+}
+.form-text, .submit{
+    display: block;
+    margin-bottom: 20px;
+}
+.form-text{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #4f4e4e;
+}
+.input{
+    width: 80%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 16px;
+    outline: none ;
+}
+.input::placeholder{
+    font-family: 'Work Sans', sans-serif;
+}
+.age{
+    margin-left: 19px;
+}
+.email{
+    margin-left: 3px;
+}
+
+.submit{
+    position: relative;
+    bottom: -15px;
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #55b658;
+    text-align: center;
+    margin: 20px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:860px){
+    .header > .nav-bar{
+        display: none;
+        }
+    .bars{
+        display: block !important;
+        position: fixed;
+        right: 30px;
+        top: 18px;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+    }
+    
+    /* The paragraph */
+    #paragraph{
+        position: absolute;
+        top: 15vh;
+        left: 4vw;
+        width: 45%;
+        height: 265px;
+        margin: 0 !important;
+        color: white;
+        
+        background-color: rgba(186, 189, 191, 0.25);
+        border-radius: 10px;
+    }
+    .heading{
+        font-size: 36px;
+        align-items: left;
+        margin: 10px 5px 0px 15px;
+    }
+    .heading1{
+        display: block;
+    }
+    .description{
+        font-family: 'Work Sans', sans-serif;
+        margin: 10px 10px 10px 15px;
+        font-size: 13px;
+        text-align: justify;
+    }
+    .get-to-know{
+        margin: 10px 10px 10px 15px;
+        text-decoration: none;
+        color: inherit;
+        font-size: 14px;
+        font-family: 'Work Sans', sans-serif;
+    }
+
+    /* The video section*/
+    .video-section{
+        display: flex;
+        position: absolute;
+        top: 15vh;
+        left: 50vw;
+        width: 320px;
+        height: 265px;
+        padding: 10px 15px 20px 15px;
+        background-color: rgba(186, 189, 191, 0.25);
+        border-radius: 10px;
+    }
+    .video-heading{
+        font-size: 18px;
+        font-family: 'Work Sans', sans-serif;
+        margin: 10px 10px 10px 15px;
+        color: white;
+    }
+    .video{
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        border: none;
+    }
+
+
+
+
+    /* The registration section */
+    .registration{
+        position: absolute;
+        top: 50vh;
+        left: 10vw;
+        width: 80vw;
+        height: 350px;
+        padding: 10px 15px 20px 15px;
+        background-color: rgba(186, 189, 191, 0.25);
+        border-radius: 10px;
+    }
+    .form-heading{
+        display: block;
+        font-size: 30px;
+        font-family: 'Work Sans', sans-serif;
+        margin: 10px 10px 10px 15px;
+        color: white;
+        text-align: center;
+    }
+    .form-mainsection{
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 5px;
+        padding: 15px;
+    }
+    .form-text, .submit{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .form-text{
+        font-family: 'Work Sans', sans-serif;
+        font-size: 18px;
+        margin-bottom: 5px;
+        color: #4f4e4e;
+    }
+    .input{
+        width: 80%;
+        height: 35px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 5px 10px;
+        font-size: 16px;
+        outline: none ;
+    }
+    .input::placeholder{
+        font-family: 'Work Sans', sans-serif;
+    }
+    .age{
+        margin-left: 19px;
+    }
+    .email{
+        margin-left: 3px;
+    }
+
+    .submit{
+        position: relative;
+        bottom: -15px;
+        width: 80%;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        background-color: #55b658;
+        text-align: center;
+        margin: auto;
+    }
+
+
+
+}
